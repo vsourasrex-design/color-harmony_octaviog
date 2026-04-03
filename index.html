@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Harmony Landing Page</title>
+  <style>
+    :root {
+      --primary: #5e17eb;   /* Deep purple */
+      --secondary: #ff6b6b; /* Soft red */
+      --accent: #4ecdc4;    /* Teal */
+      --dark: #1a1a2e;
+      --light: #f8f9fa;
+    }
 
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    .gradient-section {
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://source.unsplash.com/random/1920x1080/?abstract');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .gradient-section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .gradient-section:hover h2 {
+      color: var(--accent);
+    }
+
+    .solid-section {
+      background-color: var(--secondary);
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .solid-section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .solid-section p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: #aaa;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ChromaFlow</h1>
+    <p>Design in perfect color harmony</p>
+  </header>
+
+  <main>
+    <section class="gradient-section">
+      <h2>Bold & Immersive</h2>
+      <p>A gradient background with transparent overlay ensures readability and depth.</p>
+    </section>
+
+    <section class="solid-section">
+      <h2>Clear & Confident</h2>
+      <p>A solid accent color provides contrast and visual balance.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ChromaFlow. All rights reserved.</p>
+  </footer>
+</body>
+</html>   
